@@ -28,8 +28,9 @@ jobs:
         run: |
           pip install --upgrade pip
           pip install mkdocs mkdocs-material \
-                     mkdocs-awesome-pages-plugin \
-                     mkdocs-git-revision-date-localized-plugin
+                     mkdocs-awesome-nav \
+                     mkdocs-git-revision-date-localized-plugin \
+                     mkdocs-toc-sidebar-plugin
 
       - name: Validate site builds cleanly
         run: mkdocs build --strict

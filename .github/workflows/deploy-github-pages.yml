@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.x" }
-      - run: pip install mkdocs mkdocs-material mkdocs-awesome-pages-plugin  mkdocs-git-revision-date-localized-plugin mkdocs-redirects mkdocs-embed-external-markdown mkdocs-glightbox
+      - run: pip install mkdocs mkdocs-material mkdocs-awesome-nav mkdocs-git-revision-date-localized-plugin mkdocs-redirects mkdocs-embed-external-markdown mkdocs-glightbox mkdocs-toc-sidebar-plugin
       - run: mkdocs build --strict
       - uses: actions/upload-pages-artifact@v3
         with:

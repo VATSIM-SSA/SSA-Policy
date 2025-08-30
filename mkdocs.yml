@@ -2,7 +2,6 @@ site_name: VATSSA Policy Hub
 site_url: https://policy.vatssa.com
 theme:
   name: material
-  custom_dir: overrides
   features:
     - navigation.tabs
     - navigation.sections
@@ -35,7 +34,7 @@ markdown_extensions:
 plugins:
   - search:
       lang: en
-  - awesome-pages:
+  - awesome-nav:
       strict: false
       order: asc
       sort_type: natural
@@ -51,3 +50,7 @@ plugins:
       height: auto
       zoomable: true
       draggable: false
+  - toc-sidebar:
+      position: right
+      collapsible: true
+      auto_scroll: true
