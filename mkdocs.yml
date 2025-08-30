@@ -1,4 +1,5 @@
 site_name: VATSSA Policy Hub
+site_url: https://policy.vatssa.com
 theme:
   name: material
   features:
