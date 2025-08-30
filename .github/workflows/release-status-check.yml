@@ -1,4 +1,4 @@
-name: release-status-check
+name: Release Status Check
 on:
   pull_request:
     branches:

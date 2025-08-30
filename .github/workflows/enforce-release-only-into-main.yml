@@ -1,4 +1,4 @@
-name: Enforce release-only into main
+name: Enforce Release-only into Main
 on:
   pull_request:
     types: [opened, synchronize, reopened]
