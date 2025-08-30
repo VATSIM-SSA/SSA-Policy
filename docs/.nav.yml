@@ -1,0 +1,10 @@
+title: VATSSA Policies
+sort:
+  direction: asc
+  type: natural
+  by: filename
+  sections: last
+  ignore_case: true
+
+nav:
+  - Home: index.md

@@ -34,9 +34,7 @@ plugins:
   - search:
       lang: en
   - awesome-nav:
-      direction: asc
-      type: natural
-      by: title
+      filename: .nav.yml
   - git-revision-date-localized:
       type: date
       strict: false
