@@ -43,3 +43,21 @@ plugins:
       height: auto
       zoomable: true
       draggable: false
+
+# Navigation Structure
+nav:
+  - Home: index.md
+  - Membership:
+      - Transfer & Visiting Controller Policy: tvcp/overview.md
+  - Controller:
+      - Currency Policy: currency/overview.md
+      - FSS Policy: fss/overview.md
+  - ATC Training:
+      - ATC Training Policy: atc-training/overview.md
+      - Solo Certification Policy: solo/overview.md
+      - Fast Track Paths: fast-track/overview.md
+  - Virtual Airlines:
+      - Regional Virtual Airlines Policy: rva/overview.md
+  - Division:
+      - Staff Policy: staff/overview.md
+      - Sector Files: sector-files/overview.md
