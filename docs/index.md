@@ -5,28 +5,29 @@ This site provides a single source of truth for all approved VATSSA policies.
 
 ## Available Policies
 
-- Membership
+**Membership**
 
-  - [Transfer & Visiting Policy](tvcp/overview.md)
+- [Transfer & Visiting Policy](tvcp/overview.md)
 
-- Controllers
+**Controllers**
 
-  - [Currency Policy](currency/overview.md)
-  - [FSS Policy](fss/overview.md)
+- [Currency Policy](currency/overview.md)
+- [FSS Policy](fss/overview.md)
 
-- ATC Training
+**ATC Training**
 
-  - [Training Guide and Policy](atc-training/overview.md)
-  - [Fast Track Paths](fast-track/overview.md)
-  - [Solo Cert Policy](solo/overview.md)
+- [Training Guide and Policy](atc-training/overview.md)
+- [Fast Track Paths](fast-track/overview.md)
+- [Solo Cert Policy](solo/overview.md)
 
-- Virtual Airlines
+**Virtual Airlines**
 
-  - [Regional Virtual Airline (rVA) Partner Policy](rva/overview.md)
+- [Regional Virtual Airline (rVA) Partner Policy](rva/overview.md)
 
-- Division
-  - [Staff Policy](staff/overview.md)
-  - [Sector File Policy](sector-files/overview.md)
+**Division**
+
+- [Staff Policy](staff/overview.md)
+- [Sector File Policy](sector-files/overview.md)
 
 ---
 
