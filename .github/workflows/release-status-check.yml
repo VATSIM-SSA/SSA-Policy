@@ -7,7 +7,6 @@ on:
     paths:
       - "docs/**"
       - "mkdocs.yml"
-      - ".github/workflows/**"
       - "**/*.md"
 
 permissions:
@@ -24,7 +23,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: "pip"
 
       - name: Install MkDocs + plugins (match mkdocs.yml)
         run: |
