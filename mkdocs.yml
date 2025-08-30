@@ -34,10 +34,9 @@ plugins:
   - search:
       lang: en
   - awesome-nav:
-      strict: false
-      order: asc
-      sort_type: natural
-      order_by: title
+      direction: asc
+      type: natural
+      by: title
   - git-revision-date-localized:
       type: date
       strict: false
