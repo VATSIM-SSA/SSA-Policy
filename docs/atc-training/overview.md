@@ -22,7 +22,7 @@ _Note: Read in conjunction with applicable VATSIM policy._
 ## 2. General
 
 - Must be read alongside any relevant VATSIM policies.
-- The ATC Training Manager holds full discretion to waive or amend policy aspects as necessary for VATSSA’s benefit :contentReference[oaicite:2]{index=2}.
+- The ATC Training Manager holds full discretion to waive or amend policy aspects as necessary for VATSSA’s benefit.
 
 ---
 

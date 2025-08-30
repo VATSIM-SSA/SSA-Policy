@@ -1,6 +1,6 @@
 <div markdown=1 class="sidebar">
 # Related Policies
-- [Sector File Policy](sector-files/overview.md)
+- [Sector File Policy](../sector-files/overview.md)
 </div>
 
 # VATSSA Staff Policy
