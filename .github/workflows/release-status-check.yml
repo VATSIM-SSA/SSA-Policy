@@ -1,0 +1,51 @@
+name: release-status-check
+on:
+  pull_request:
+    branches:
+      - main
+      - release/*
+    paths:
+      - "docs/**"
+      - "mkdocs.yml"
+      - ".github/workflows/**"
+      - "**/*.md"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: mkdocs build --strict
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install MkDocs + plugins (match mkdocs.yml)
+        run: |
+          pip install --upgrade pip
+          pip install mkdocs mkdocs-material \
+                     mkdocs-awesome-pages-plugin \
+                     mkdocs-git-revision-date-localized-plugin
+
+      - name: Validate site builds cleanly
+        run: mkdocs build --strict
+
+  # Optional but helpful: fast external link check
+  links:
+    name: external link check
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run lychee
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: --no-progress --accept 200,206 --exclude-file .lycheeignore .
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
