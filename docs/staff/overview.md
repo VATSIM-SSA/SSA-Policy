@@ -1,8 +1,3 @@
-<div markdown=1 class="sidebar">
-# Related Policies
-- [Sector File Policy](../sector-files/overview.md)
-</div>
-
 # VATSSA Staff Policy
 
 **Valid from:** 16 June 2022

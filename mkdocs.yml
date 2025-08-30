@@ -3,10 +3,10 @@ site_url: https://policy.vatssa.com
 theme:
   name: material
   features:
-    - navigation.tabs
-    - navigation.sections
-    - toc.integrate
+    - navigation.instant
+    - navigation.path
     - navigation.top
+    - toc.follow
     - search.suggest
     - search.highlight
     - content.tabs.link
@@ -49,7 +49,3 @@ plugins:
       height: auto
       zoomable: true
       draggable: false
-  - toc-sidebar:
-      position: right
-      collapsible: true
-      auto_scroll: true
