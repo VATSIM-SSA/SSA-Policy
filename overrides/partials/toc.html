@@ -1,0 +1,25 @@
+{# overrides/partials/toc.html #} {# Build a list of "related" pages: siblings
+in the same section (parent). #} {% set related = [] %} {% if page and
+page.parent %} {% set related = page.parent.children %} {% else %} {# No parent
+(top-level page) → use top-level nav items #} {% set related = nav.children %}
+{% endif %} {% if page and page.meta and page.meta.related %}
+<aside
+	class="md-sidebar md-sidebar--secondary"
+	data-md-component="sidebar-secondary"
+>
+	<div class="md-sidebar__scrollwrap">
+		<div class="md-sidebar__inner">
+			<nav class="md-nav md-nav--secondary" aria-label="Related Policies">
+				<label class="md-nav__title">See also</label>
+				<ul class="md-nav__list">
+					{% for rel in page.meta.related %}
+					<li class="md-nav__item">
+						<a href="{{ rel | url }}" class="md-nav__link">{{ rel | title }}</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</nav>
+		</div>
+	</div>
+</aside>
+{% endif %}

@@ -2,11 +2,13 @@ site_name: VATSSA Policy Hub
 site_url: https://policy.vatssa.com
 theme:
   name: material
+  custom_dir: overrides
   features:
     - navigation.tabs
     - navigation.sections
     - toc.integrate
     - navigation.top
+    - navigation.tabs
     - search.suggest
     - search.highlight
     - content.tabs.link
