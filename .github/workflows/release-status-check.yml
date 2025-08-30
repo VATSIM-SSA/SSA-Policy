@@ -24,10 +24,10 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install MkDocs + plugins (match mkdocs.yml)
+      - name: Install MkDocs + plugins (from requirements.txt)
         run: |
           pip install --upgrade pip
-          pip install mkdocs mkdocs mkdocs-material mkdocs-awesome-nav mkdocs-git-revision-date-localized-plugin mkdocs-redirects mkdocs-embed-external-markdown mkdocs-glightbox mkdocs-toc-sidebar-plugin
+          pip install -r requirements.txt
 
       - name: Validate site builds cleanly
         run: mkdocs build --strict
