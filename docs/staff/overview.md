@@ -1,7 +1,8 @@
+---
 title: VATSSA Staff Policy
 related:
-
-- ../sector-files/overview.md
+  - ../sector-files/overview.md
+---
 
 # VATSSA Staff Policy
 
