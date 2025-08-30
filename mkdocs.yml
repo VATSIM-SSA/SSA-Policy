@@ -1,0 +1,50 @@
+site_name: VATSSA Policy Hub
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: teal
+      accent: lime
+markdown_extensions:
+  - admonition
+  - footnotes
+
+plugins:
+  - search:
+      lang: en
+  - awesome-pages:
+      strict: false
+      order: asc
+      sort_type: natural
+      order_by: title
+  - git-revision-date-localized:
+      type: date
+      strict: false
+  - external-markdown: {}
+  - glightbox:
+      touchNavigation: true
+      effect: zoom
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: false
