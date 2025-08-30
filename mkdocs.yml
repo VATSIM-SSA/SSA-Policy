@@ -41,7 +41,7 @@ plugins:
   - git-revision-date-localized:
       type: date
       strict: false
-  - embed-external-markdown: {}
+  #- external-markdown: {}
   - glightbox:
       touchNavigation: true
       effect: zoom
