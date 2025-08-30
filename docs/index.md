@@ -5,14 +5,14 @@ This site provides a single source of truth for all approved VATSSA policies.
 
 ## Available Policies
 
-- [Fast Track Paths](fasttrack/overview.md)
+- [Fast Track Paths](fast-track/overview.md)
 - [Regional Virtual Airline (rVA) Partner Policy](rva/overview.md)
 - [Transfer & Visiting Policy](tvcp/overview.md)
-- [Staff Policy](staff/overview.md.md)
-- [Solo Cert Policy](solo/overview.md.md)
+- [Staff Policy](staff/overview.md)
+- [Solo Cert Policy](solo/overview.md)
 - [Sector File Policy](sector-files/overview.md)
-- [Currency Policy](currency/overview.md.md)
-- [Training Guide and Policy](atc-training/overview.md.md)
+- [Currency Policy](currency/overview.md)
+- [Training Guide and Policy](atc-training/overview.md)
 
 ---
 
