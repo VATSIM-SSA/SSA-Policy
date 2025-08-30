@@ -33,12 +33,9 @@ markdown_extensions:
 plugins:
   - search:
       lang: en
-  - awesome-nav:
-      filename: .nav.yml
   - git-revision-date-localized:
       type: date
       strict: false
-  #- external-markdown: {}
   - glightbox:
       touchNavigation: true
       effect: zoom
