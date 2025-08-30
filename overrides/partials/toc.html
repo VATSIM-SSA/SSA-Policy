@@ -1,15 +1,13 @@
-{# overrides/partials/toc.html #} {# Build a list of "related" pages: siblings
-in the same section (parent). #} {% set related = [] %} {% if page and
-page.parent %} {% set related = page.parent.children %} {% else %} {# No parent
-(top-level page) → use top-level nav items #} {% set related = nav.children %}
-{% endif %} {% if page and page.meta and page.meta.related %}
+{# Right-hand custom sidebar #}
 <aside
 	class="md-sidebar md-sidebar--secondary"
 	data-md-component="sidebar-secondary"
 >
 	<div class="md-sidebar__scrollwrap">
 		<div class="md-sidebar__inner">
-			<nav class="md-nav md-nav--secondary" aria-label="Related Policies">
+			{# 1) Page-specific links via front matter 'related:' #} {% if page and
+			page.meta and page.meta.related %}
+			<nav class="md-nav md-nav--secondary" aria-label="See also">
 				<label class="md-nav__title">See also</label>
 				<ul class="md-nav__list">
 					{% for rel in page.meta.related %}
@@ -19,7 +17,45 @@ page.parent %} {% set related = page.parent.children %} {% else %} {# No parent
 					{% endfor %}
 				</ul>
 			</nav>
+			{% endif %} {# 2) Fallback: siblings in same section (shows even if no
+			'related') #} {% set related = [] %} {% if page and page.parent %} {% set
+			related = page.parent.children %} {% else %} {% set related = nav.children
+			%} {% endif %} {% if related and related | length > 1 %}
+			<nav class="md-nav md-nav--secondary" aria-label="In this section">
+				<label class="md-nav__title">In this section</label>
+				<ul class="md-nav__list">
+					{% for item in related %} {% if item.url != page.url %}
+					<li class="md-nav__item">
+						<a href="{{ item.url | url }}" class="md-nav__link"
+							>{{ item.title }}</a
+						>
+					</li>
+					{% endif %} {% endfor %}
+				</ul>
+			</nav>
+			{% endif %} {# 3) Optional: global links visible everywhere #}
+			<nav class="md-nav md-nav--secondary" aria-label="Resources">
+				<label class="md-nav__title">Resources</label>
+				<ul class="md-nav__list">
+					<li class="md-nav__item">
+						<a class="md-nav__link" href="{{ 'tvcp/overview.md' | url }}"
+							>Transfer &amp; Visiting</a
+						>
+					</li>
+					<li class="md-nav__item">
+						<a
+							class="md-nav__link"
+							href="{{ 'atc-training/overview.md' | url }}"
+							>Training Guide</a
+						>
+					</li>
+					<li class="md-nav__item">
+						<a class="md-nav__link" href="{{ 'fss/overview.md' | url }}"
+							>FSS Policy</a
+						>
+					</li>
+				</ul>
+			</nav>
 		</div>
 	</div>
 </aside>
-{% endif %}
