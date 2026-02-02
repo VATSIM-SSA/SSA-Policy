@@ -27,6 +27,7 @@ This site provides a single source of truth for all approved VATSSA policies.
 **Division**
 
 - [Staff Policy](staff/overview.md)
+- [Staff Selection Policy](staff/staff-selection.md)
 - [Sector File Policy](sector-files/overview.md)
 - [Meeting Minutes](meeting-minutes/overview.md)
 
