@@ -47,7 +47,7 @@ VATSSA must accept all reasonable transfer requests and process them by the most
 
 ### 4.1 Eligibility
 
-- Hold a VATSIM **ATC rating of S2 or above**.
+- Hold a VATSIM **ATC rating of S3 or above**.
 - The rating must have been held for **90 days or more**.
 - The rating must have been used to control for at least **50 hours in the home Division** on positions relevant to that rating.
 
